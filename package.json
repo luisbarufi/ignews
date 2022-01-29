@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next-auth/fauna-adapter": "^1.0.2",
+    "@prismicio/client": "^6.1.1",
     "@stripe/stripe-js": "^1.22.0",
     "axios": "^0.25.0",
     "faunadb": "^4.4.1",
