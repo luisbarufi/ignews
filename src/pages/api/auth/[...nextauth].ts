@@ -32,11 +32,11 @@ export default NextAuth({
               q.Match(
                 q.Index('subscription_by_status'),
                 'active'
-              )    
+              )
             ])
           )
         )
-  
+
         return { 
           ...session,
           activeSubscription: userActiveSubscription
