@@ -60,7 +60,7 @@ describe('SubscribeButton Component', () => {
       push: pushMock,
     } as any)
 
-    render( <SubscribeButton />);
+    render( <SubscribeButton /> );
 
     const subscribeButton = screen.getByText('Subscribe now');
   
