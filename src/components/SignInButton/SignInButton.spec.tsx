@@ -16,7 +16,7 @@ describe('SignInButton Component', () => {
 
     render( <SignInButton /> );
   
-    expect(screen.getByText('Sing in whith GitHub')).toBeInTheDocument()
+    expect(screen.getByText('Sing in whith GitHub')).toBeInTheDocument();
   });
 
   it('renders correctly when is authenticated', () => {
@@ -35,6 +35,6 @@ describe('SignInButton Component', () => {
     
     render( <SignInButton /> );
   
-    expect(screen.getByText('John Doe')).toBeInTheDocument()
+    expect(screen.getByText('John Doe')).toBeInTheDocument();
   });
 });
