@@ -19,14 +19,14 @@ interface PostPreviewProps{
 }
 
 export default function PostPreview({ post }: PostPreviewProps) {
-  const { data: session } = useSession()
+  const { data: session } = useSession();
   const router = useRouter();
 
   useEffect(() => {
     if (session?.activeSubscription) {
-      router.push(`/posts/${post.slug}`)
+      router.push(`/posts/${post.slug}`);
     }
-  }, [session])
+  }, [session]);
 
   return (
     <>
@@ -46,7 +46,7 @@ export default function PostPreview({ post }: PostPreviewProps) {
           <div className={styles.continueReading}>
             Wanna continue reading?
             <Link href="/">
-              <a href="">Subscribe now 🤗</a>
+              <a>Subscribe now 🤗</a>
             </Link>
           </div>
         </article>
@@ -80,14 +80,13 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
         day: '2-digit',
         month: 'long',
         year: 'numeric',
-      }
-    )
-  };
+      })
+    };
 
   return {
     props: {
       post
     },
-    redirect: 60 * 30, // 30 minutes
+    revalidate: 60 * 30, // 30 minutes
   }
 }
