@@ -31,7 +31,7 @@
     "@testing-library/react": "^12.1.2",
     "@types/next-auth": "^3.15.0",
     "@types/node": "^17.0.8",
-    "@types/react": "^17.0.38",
+    "@types/react": "^18.2.74",
     "babel-jest": "^27.5.1",
     "eslint": "8.6.0",
     "eslint-config-next": "12.0.8",
